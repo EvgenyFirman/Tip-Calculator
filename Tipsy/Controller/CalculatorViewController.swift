@@ -19,7 +19,7 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var peopleSplitLabel: UILabel!
     
     var amount: Float = 0.0
-    var steeperValue: Float = 0.0
+    var steeperValue: Float = 2.0
     var totalAmount: Float = 0.0
     //Tip changed percentage
     @IBAction func tipChanged(_ sender: UIButton) {
