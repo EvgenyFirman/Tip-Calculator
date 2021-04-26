@@ -14,14 +14,21 @@ class ResultViewController: UIViewController {
     
     @IBOutlet weak var settingLabel: UILabel!
     
+    var totalAmount: Float = 0.0
+    var numberOfPeople: Int = 0
+    var tipPercentage: Int = 0
+    @IBOutlet weak var resultLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        print(totalAmount)
+        totalLabel.text = String(format:"%.1f", totalAmount)
+        resultLabel.text = "Split between \(numberOfPeople) people, with \(tipPercentage) % tip percentage"
+        
     }
     
     @IBAction func recalculateButton(_ sender: Any) {
-        
+        dismiss(animated: true, completion: nil)
     }
     
     /*
